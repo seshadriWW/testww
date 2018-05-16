@@ -1,18 +1,15 @@
-
 pipeline {
   agent any
-  
-  /*parameters {
-	string(
-		name: 'CICD Pipeline',
-		defaultValue:'WB',
-		description: 'Seshu CICD Pipeline')
-    }*/
-	stages {
+  stages {
     stage('Pipeline Start') {
       steps {
-       echo 'Pipeline Started'
+        echo 'Pipeline Started'
       }
     }
-}
+    stage('echo maven') {
+      steps {
+        sh 'whoami'
+      }
+    }
+  }
 }
