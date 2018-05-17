@@ -136,10 +136,10 @@ node {
 			//def nexus_SearchURL = "${nexus_BaseURL}/service/rest/beta/search?repository=${nexus_RepoName}&group=${pom_GroupID}&name=${pom_ArtifactId}"
 			def downloadDir = ""
 			environment {
-			NEXUS_CREDENTIALS = credentials('cf5cf9a9-4ceb-4372-abb3-31e595c22bda')
+			NEXUS_CREDENTIALS = credentials('ddc17e54-f52e-4563-9550-c8fa41f1a190')
 			}
 			withCredentials([usernamePassword(
-			credentialsId: 'cf5cf9a9-4ceb-4372-abb3-31e595c22bda',
+			credentialsId: 'ddc17e54-f52e-4563-9550-c8fa41f1a190',
 			passwordVariable: 'nexuspassword',
 			usernameVariable: 'nexususername')])
 			{
@@ -176,7 +176,7 @@ node {
 			//def downloadDir = "${env.JENKINS_HOME}/CloudHub/Downloads/"+UDF_GetGitRepoName()		
 			
 			/*withCredentials([usernamePassword(
-			credentialsId: 'cf5cf9a9-4ceb-4372-abb3-31e595c22bda',
+			credentialsId: 'ddc17e54-f52e-4563-9550-c8fa41f1a190',
 			passwordVariable: 'nexuspassword',
 			usernameVariable: 'nexususername')])
 			{
