@@ -11,5 +11,10 @@ pipeline {
         sh 'whoami'
       }
     }
+    stage('sonar') {
+      steps {
+        sh 'mvn sonar:sonar'
+      }
+    }
   }
 }
