@@ -265,7 +265,7 @@ def UDF_ArtifactUploadToNexus(udfp_NexusBaseURL, udfp_GroupId, udfp_Version, udf
 		groupId: udfp_GroupId,
 		version: udfp_Version,
 		repository: nexusRepoName,
-		credentialsId: '5ddd1595-a2f5-4bc3-8f57-4ddd2d14ab2c',
+		credentialsId: 'ddc17e54-f52e-4563-9550-c8fa41f1a190',
 		artifacts: [
 			[artifactId: udfp_ArtifactId,
 			 classifier: '',
